@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OnlineShoppingCart</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: rgb(222, 227, 225);
+    }
+    h1 {
+      text-align: center;
+    }
+    .online-shopping-container {
+      max-width: 800px;
+      background-color: white;
+      margin: 10px auto;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px 0 rgb(199, 198, 198);
+    }
+    .product-row {
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid;
+      border-radius: 5px;
+      padding: 10px;
+      align-items: center;
+      margin: 5px 0px;
+    }
+    button {
+      background-color: rgb(113, 113, 227);
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: rgb(165, 138, 138);
+    }
+    h2 {
+      margin: 10px 0;
+    }
+    #feedback {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: rgb(201, 193, 193);
+      padding: 10px;
+      border-radius: 5px;
+      display: none;
+      color: white;
+    }
+    #totalPrice {
+      text-align: right;
+    }
+  </style>
+  <body>
+    <div class="online-shopping-container">
+      <h1>Online Shopping</h1>
+      <p id="feedback"></p>
+      <h2>Avaliable Products</h2>
+      <div id="productsContainer">
+        <!-- <div class="product-row">
+          <p>Laptop 500000</p>
+          <button>Add to cart</button>
+        </div> -->
+      </div>
+      <h2>My Cart</h2>
+      <div id="cartContainer">
+        <!-- <div class="product-row">
+          <p>Laptop 500000</p>
+          <button>Remove</button>
+        </div> -->
+      </div>
+      <h2 id="totalPrice">Rs.0</h2>
+      <h2>Actions</h2>
+      <button id="sortByPrice">Sort by Price</button>
+      <button id="clearCart">Clear Cart</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
